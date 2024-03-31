@@ -1,0 +1,77 @@
+:root{
+    --salmon: #ef9d71;
+    --black:#000;
+    --white:#fff;
+    --cyan: #aedee0;
+    --green:#29ca29;
+
+    --dsalmon:#5a3d2e;
+    --dcyan: #183333;
+    --dgreen:#1a491a;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    transition: all ease .5s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.vdodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+
+*::selection{
+    background-color: var(--salmon);
+}
+
+body[theme="black"]{
+    background-color: var(--black);
+}
+
+body[theme="black"] .section{
+    color: var(--white);
+}
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+
+body[theme="cyan"] .section{
+    color: var(--dcyan);
+}
+body[theme="green"]{
+    background-color:var(--green) ;
+}
+
+body[theme="green"]{
+    background-color: var(--dgreen);
+}
+
+body[theme='white']{
+    background-color: var(--white);
+}
+body[theme='white'] .section{
+    color: var(--black);
+}
+
+
+
+body[theme='salmon']{
+    background-color: var(--salmon);
+}
+body[theme='salmon'] .section{
+    color: var(--dsalmon);
+}
