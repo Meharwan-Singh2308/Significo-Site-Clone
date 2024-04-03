@@ -125,7 +125,7 @@ document.querySelectorAll('.section')
         ScrollTrigger.create({
             trigger: e,
             start: 'top 50%',
-            end: 'bottom 50%',
+            end: 'bottomk 50%',
             onEnter: function () {
                 document.body.setAttribute('theme', e.dataset.color)
             },
